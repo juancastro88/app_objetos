@@ -24,7 +24,6 @@ public class ProgramaControlador {
 		Statement sentencia1 = null;
 		ResultSet rs1 = null;
 		String sql = "";
-
 		try {
 			conexion1 = basedato.getConexion();
 			sentencia1 = conexion1.createStatement();
