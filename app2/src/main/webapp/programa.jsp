@@ -10,15 +10,25 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-		ProgramaControlador controlador = new ProgramaControlador();
-		ArrayList<Programa> lista = controlador.getProgramas();
+	<table border="1">
+		<tr>
+			<th>Id</th>
+			<th>Nombre</th>
+		</tr>
+		<%
+			ProgramaControlador controlador = new ProgramaControlador();
+			ArrayList<Programa> lista = controlador.getProgramas();
 
-		for (int i = 0; i < lista.size(); i++) {
-			Programa programa = lista.get(i);
-			out.println("<p>Id: " + programa.getId() + "</p>");
-			out.println("<p>Nombre: " + programa.getNombre() + "</p>");
-		}
-	%>
+			for (int i = 0; i < lista.size(); i++) {
+				Programa programa = lista.get(i);
+		%>
+		<tr>
+			<td><%=programa.getId()%></td>
+			<td><%=programa.getNombre()%></td>
+		</tr>
+		<%
+			}
+		%>
+	</table>
 </body>
 </html>
