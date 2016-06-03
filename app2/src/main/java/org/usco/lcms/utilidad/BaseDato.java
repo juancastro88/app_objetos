@@ -16,7 +16,7 @@ public class BaseDato {
 		Connection conexion = null;
 
 		String driver = "org.postgresql.Driver";
-		String url = "dbc:postgresql://localhost:5432/lcms";
+		String url = "jdbc:postgresql://localhost:5432/lcms";
 		String user = "usco";
 		String password = "usco";
 

@@ -33,7 +33,7 @@ public class ProgramaControlador {
 			while (rs1.next()) {
 				long id = rs1.getLong("pro_id");
 				String nombre = rs1.getString("pro_nombre");
-
+				System.out.println("Nombre " + nombre);
 				Programa programa = new Programa();
 				programa.setId(id);
 				programa.setNombre(nombre);
